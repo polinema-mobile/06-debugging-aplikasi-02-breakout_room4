@@ -111,4 +111,60 @@ public class TesKlikButton {
         onView(withId(R.id.button2)).perform(click());
         onView(withId(R.id.input)).check(matches(withText("3")));
     }
+
+    @Test
+    public void tesFungsiTambah2(){
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_para2)).perform(click());
+        onView(withId(R.id.button_add)).perform(click());
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_dot)).perform(click());
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("0.5")));
+    }
+    @Test
+    public void tesFungsiKurang2(){
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_para2)).perform(click());
+        onView(withId(R.id.button_sub)).perform(click());
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_dot)).perform(click());
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("-10.5")));
+    }
+    @Test
+    public void tesFungsiKali2(){
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_para2)).perform(click());
+        onView(withId(R.id.button_multi)).perform(click());
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_dot)).perform(click());
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("27.5")));
+    }
+    @Test
+    public void tesFungsiBagi2(){
+        onView(withId(R.id.button7)).perform(click());
+        onView(withId(R.id.button_para2)).perform(click());
+        onView(withId(R.id.button_divide)).perform(click());
+        onView(withId(R.id.button3)).perform(click());
+        onView(withId(R.id.button_dot)).perform(click());
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("-2.0")));
+    }
+    @Test
+    public void tesFungsiModulus2(){
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_para2)).perform(click());
+        onView(withId(R.id.button_para1)).perform(click());
+        onView(withId(R.id.button2)).perform(click());
+        onView(withId(R.id.button_dot)).perform(click());
+        onView(withId(R.id.button5)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("-0.125")));
+    }
 }
